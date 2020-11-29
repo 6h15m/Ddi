@@ -90,7 +90,7 @@
 		</div>
 	</nav>
 	
-	<div class="jumbotron">
+	<div style="background-color:white !important" class="jumbotron">
   		<h3 class="display-5">입금 기간</h3>
   		<hr class="my-2">
   		<h3>2020.12.01 00시 00분 ~ 2020.01.01 23시 59분</h3>
@@ -111,6 +111,7 @@
   		<br><br><br><br><br><br>
   		<br><br>
   		</div>
+  	<div style="background-color:gray !important" class="jumbotron">
   		<form class="needs-validation" novalidate>
   		<div class="form-row">
       		<label for="validationCustom01">입금자 이름</label>
@@ -166,7 +167,7 @@
   </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
-
+</div>
 
 	
 	<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">

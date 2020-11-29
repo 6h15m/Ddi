@@ -11,6 +11,26 @@
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<!-- 커스텀 CSS 추가 -->
 	<link rel="stylesheet" href="./css/custom.css">
+	<style>
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #E2DCE2;
+    color: #2f2f2f;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  </style>
   <title>Info</title>
 </head>
 <body>
@@ -73,35 +93,31 @@
 	
 	<!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">비혼 여성의 더 나은 내일을 위해, '띠'</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+  <img src="./img/icon3d.png" class="img-responsive margin" style="display:inline" width="350" height="350">
+  <br><br><br><h3 class="margin">비혼 여성의 더 나은 내일을 위해, '띠'</h3>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+  <h3 class="margin">For Unmarried Women</h3>
+  <p>대한민국에서 비혼 여성으로 산다는 것은 꽤나 어려운 일입니다. <br><br>아직 한국 사회에서 여성의 사회, 경제적 지위는 남성에 비해 열악한 편이기 때문입니다. <br><br>그러면 현재를 살아가고 있는 비혼 여성들은 어떤 방식으로 이 문제를 타개해 나갈까요?<br><br>'띠'는 이러한 궁금증에서부터 시작되었습니다. </p>
 </div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
+  <h3 class="margin">Directing Point</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <p>비혼 여성들이 보다 편리하게 정보 공유를 하며 서로 연대감을 형성할 수 있도록 돕습니다.</p>
+      <br><br><img src="./img/icon1.png" class="img-responsive margin" style="width:50%" alt="Image">
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <p>분야, 지역, 성향별 구분을 하지 않고 순수한 정보 공유에 초점을 두고자 댓글 기능을 삭제했습니다.</p>
+      <br><br><img src="./img/icon2.png" class="img-responsive margin" style="width:50%" alt="Image">
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <p>비혼 여성들의 홀로서기를 응원하며, 띠와 행복한 비혼 라이프를 즐길 수 있도록 노력하겠습니다!</p>
+      <br><br><img src="./img/icon3.png" class="img-responsive margin" style="width:50%" alt="Image">
     </div>
   </div>
 </div>
