@@ -7,7 +7,7 @@
 
   <head>
 
-    <title>강의평가 웹 사이트</title>
+    <title>띠</title>
 
     <meta charset="utf-8">
 
@@ -53,40 +53,35 @@
 %>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      <a class="navbar-brand" href="index.jsp">강의평가 웹 사이트</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-
-        <span class="navbar-toggler-icon"></span>
-
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbar">
-
-        <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item active">
-
-            <a class="nav-link" href="index.jsp">MAIN</a>
-
-          </li>
-
+		<a class="navbar-brand" href="index.jsp">띠</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarColor03" style="">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link"href="index.jsp">Main</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link"href="info.jsp">Info</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link"href="magazine.jsp">Magazine</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link"href="Calendar.jsp">Calendar</a>
+				</li>
+				
           <li class="nav-item dropdown">
-
             <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">
-
-              MY PAGE
-
+              My Page
             </a>
-
             <div class="dropdown-menu" aria-labelledby="dropdown">
             <%
             	if(userID == null){
             %>
-
               <a class="dropdown-item" href="userLogin.jsp">로그인</a>
-
               <a class="dropdown-item" href="userRegister.jsp">회원가입</a>
               <%
             	} else {
@@ -107,7 +102,7 @@
 
           <input type="text" name="search" class="form-control mr-sm-2" placeholder="내용을 입력하세요.">
 
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">검색</button>
 
         </form>
 

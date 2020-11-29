@@ -202,7 +202,7 @@
 
           <li class="nav-item active">
 
-            <a class="nav-link" href="index.jsp">MAIN</a>
+            <a class="nav-link" href="index.jsp">Main</a>
 
           </li>
 
@@ -210,7 +210,7 @@
 
             <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">
 
-              MY PAGE
+              My Page
 
             </a>
 
@@ -228,7 +228,7 @@
 
           <input type="text" name="search" class="form-control mr-sm-2" placeholder="내용을 입력하세요.">
 
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">검색</button>
 
         </form>
 
