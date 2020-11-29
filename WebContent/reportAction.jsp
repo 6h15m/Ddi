@@ -98,7 +98,7 @@
 
 	String to = "myso0615m@gmail.com";
 
-	String subject = "강의평가 사이트에서 접수된 신고 메일입니다.";
+	String subject = "띠에서 접수된 신고 메일입니다.";
 
 	String content = "신고자: " + userID + "<br>제목: " + reportTitle + "<br>내용: " + reportContent;
 

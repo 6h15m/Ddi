@@ -1,58 +1,28 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="user.UserDAO"%>
 <%@ page import="java.io.PrintWriter"%>
-
 <!doctype html>
-
 <html>
-
-  <head>
-
-    <title>띠</title>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- 부트스트랩 CSS 추가하기 -->
-
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-
-    <!-- 커스텀 CSS 추가하기 -->
-
-    <link rel="stylesheet" href="./css/custom.css">
-
-  </head>
-
-  <body>
-  <%
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 부트스트랩 CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!-- 커스텀 CSS 추가 -->
+	<link rel="stylesheet" href="./css/custom.css">
+	<link rel="stylesheet" href="./css/slider.css">
+  <title>Calendar</title>
+</head>
+<body>
+<%
 	String userID = null;
-
 	if(session.getAttribute("userID") != null) {
-
 		userID = (String) session.getAttribute("userID");
-
 	}
-
-	if(userID != null) {
-
-		PrintWriter script = response.getWriter();
-
-		script.println("<script>");
-
-		script.println("alert('로그인이 된 상태입니다.');");
-
-		script.println("location.href = 'index.jsp'");
-
-		script.println("</script>");
-
-		script.close();	
-
-	}
-
 %>
 
-    <<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
 	style = "background:transparent url('img/bar_bg.png') no-repeat center center /cover">
 		<a class="navbar-brand" href="index.jsp"><img src="img/title.png" width = "150px" height = "80px"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
@@ -99,54 +69,24 @@
 
 			</form>
 
-      </div>
+		</div>
 
-    </nav>
+	</nav>
+	
+	<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
 
-    <div class="container mt-3" style="max-width: 560px;">
+		Copyright ⓒ 2020 띠 All Rights Reserved. </footer>
+  <!-- 제이쿼리 자바스크립트 추가하기 -->
 
-      <form method="post" action="./userLoginAction.jsp">
+	<script src="./js/jquery.min.js"></script>
 
-        <div class="form-group">
+	<!-- Popper 자바스크립트 추가하기 -->
 
-          <label>아이디</label>
+	<script src="./js/popper.min.js"></script>
 
-          <input type="text" name="userID" class="form-control">
+	<!-- 부트스트랩 자바스크립트 추가하기 -->
 
-        </div>
-
-        <div class="form-group">
-
-          <label>비밀번호</label>
-
-          <input type="password" name="userPassword" class="form-control">
-
-        </div>
-
-        <button type="submit" class="btn btn-primary">로그인</button>
-
-      </form>
-
-    </div>
-
-    <footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
-
-      Copyright ⓒ 2020 띠 All Rights Reserved.
-
-    </footer>
-
-    <!-- 제이쿼리 자바스크립트 추가하기 -->
-
-    <script src="./js/jquery.min.js"></script>
-
-    <!-- Popper 자바스크립트 추가하기 -->
-
-    <script src="./js/popper.min.js"></script>
-
-    <!-- 부트스트랩 자바스크립트 추가하기 -->
-
-    <script src="./js/bootstrap.min.js"></script>
-
-  </body>
-
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/slider.js"></script>
+</body>
 </html>

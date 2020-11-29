@@ -84,7 +84,7 @@
 
 	String to = userDAO.getUserEmail(userID);
 
-	String subject = "강의평가를 위한 이메일 확인 메일입니다.";
+	String subject = "띠 회원가입을 위한 이메일 확인 메일입니다.";
 
 	String content = "다음 링크에 접속하여 이메일 확인을 진행하세요." +
 
@@ -248,7 +248,7 @@
 
     <footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
 
-      Copyright ⓒ  2020 이예서 All Rights Reserved.
+      Copyright ⓒ  2020 띠 All Rights Reserved.
 
     </footer>
 

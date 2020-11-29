@@ -51,8 +51,9 @@
 	}
 
 %>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.jsp">띠</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+	style = "background:transparent url('img/bar_bg.png') no-repeat center center /cover">
+		<a class="navbar-brand" href="index.jsp"><img src="img/title.png" width = "150px" height = "80px"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -60,57 +61,42 @@
 		<div class="collapse navbar-collapse" id="navbarColor03" style="">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link"href="index.jsp">Main</a>
+					<a class="nav-link" href="info.jsp">Info</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link"href="info.jsp">Info</a>
+					<a class="nav-link" href="magazine.jsp">Magazine</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link"href="magazine.jsp">Magazine</a>
+					<a class="nav-link" href="calendar.jsp">Calendar</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link"href="Calendar.jsp">Calendar</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown"> My Page </a>
+					<div class="dropdown-menu" aria-labelledby="dropdown">
+						<%
+							if (userID == null) { // 로그인이 되어있지 않으면
+						%>
+						<a class="dropdown-item" href="userLogin.jsp">로그인</a>
+						<a class="dropdown-item" href="userRegister.jsp">회원가입</a>
+						<%
+							} else {
+						%>
+						<a class="dropdown-item" href="userLogout.jsp">로그아웃</a>
+						<%
+							}
+						%>
+					</div>
 				</li>
+			</ul>
 
-          <li class="nav-item dropdown">
+			<form action="./index.jsp" method="get"
+				class="form-inline my-2 my-lg-0">
 
-            <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">
+				<input type="text" name="search" class="form-control mr-sm-2"
+					placeholder="내용을 입력하세요.">
 
-              My Page
+				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">검색</button>
 
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdown">
-
-              <%
-            	if(userID == null){
-            %>
-
-              <a class="dropdown-item" href="userLogin.jsp">로그인</a>
-
-              <a class="dropdown-item" href="userRegister.jsp">회원가입</a>
-              <%
-            	} else {
-              %>
-
-              <a class="dropdown-item" href="userLogout.jsp">로그아웃</a>
-              <%
-            	}
-              %>
-
-            </div>
-
-          </li>
-
-        </ul>
-
-        <form action="./index.jsp" method="get" class="form-inline my-2 my-lg-0">
-
-          <input type="text" name="search" class="form-control mr-sm-2" placeholder="내용을 입력하세요.">
-
-          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">검색</button>
-
-        </form>
+			</form>
 
       </div>
 
@@ -152,7 +138,7 @@
 
     <footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
 
-      Copyright ⓒ 2020 이예서 All Rights Reserved.
+      Copyright ⓒ 2020 띠 All Rights Reserved.
 
     </footer>
 

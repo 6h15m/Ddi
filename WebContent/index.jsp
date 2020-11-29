@@ -71,8 +71,9 @@
 			}
 	%>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.jsp">띠</a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+	style = "background:transparent url('img/bar_bg.png') no-repeat center center /cover">
+		<a class="navbar-brand" href="index.jsp"><img src="img/title.png" width = "150px" height = "80px"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -80,16 +81,13 @@
 		<div class="collapse navbar-collapse" id="navbarColor03" style="">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link"href="index.jsp">Main</a>
+					<a class="nav-link" href="info.jsp">Info</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link"href="info.jsp">Info</a>
+					<a class="nav-link" href="magazine.jsp">Magazine</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link"href="magazine.jsp">Magazine</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link"href="Calendar.jsp">Calendar</a>
+					<a class="nav-link" href="calendar.jsp">Calendar</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown"> My Page </a>
@@ -116,7 +114,7 @@
 				<input type="text" name="search" class="form-control mr-sm-2"
 					placeholder="내용을 입력하세요.">
 
-				<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">검색</button>
+				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">검색</button>
 
 			</form>
 
@@ -159,9 +157,9 @@
 			</select> <input type="text" name="search" class="form-control mx-1 mt-2"
 				value="<%=search%>" placeholder="내용을 입력하세요.">
 
-			<button type="submit" class="btn btn-primary mx-1 mt-2">검색</button>
+			<button type="submit" class="btn btn-secondary mx-1 mt-2">검색</button>
 
-			<a class="btn btn-primary mx-1 mt-2" data-toggle="modal"
+			<a class="btn btn-dark mx-1 mt-2" data-toggle="modal"
 				href="#registerModal">등록하기</a> <a class="btn btn-danger ml-1 mt-2"
 				data-toggle="modal" href="#reportModal">신고</a>
 
@@ -341,7 +339,7 @@
 							<button type="button" class="btn btn-secondary"
 								data-dismiss="modal">취소</button>
 
-							<button type="submit" class="btn btn-primary">등록하기</button>
+							<button type="submit" class="btn btn-dark">등록하기</button>
 
 						</div>
 
@@ -416,7 +414,7 @@
 
 	<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
 
-		Copyright ⓒ 2020 이예서 All Rights Reserved. </footer>
+		Copyright ⓒ 2020 띠 All Rights Reserved. </footer>
 
 	<!-- 제이쿼리 자바스크립트 추가하기 -->
 
