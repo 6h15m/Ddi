@@ -27,11 +27,11 @@ public class UserDAO {
 
 		try {
 
-			String dbURL = "jdbc:mysql://localhost:3307/DIB";
+			String dbURL = "jdbc:mysql://us-cdbr-east-02.cleardb.com";
 
-			String dbID = "root";
+			String dbID = "b14849b31c5f24";
 
-			String dbPassword = "mirim";
+			String dbPassword = "b998eadb";
 
 			Class.forName("com.mysql.jdbc.Driver");
 
