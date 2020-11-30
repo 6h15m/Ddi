@@ -54,23 +54,38 @@
 
 	request.setCharacterEncoding("UTF-8");
 
-	String reportTitle = null;
+	String depositName = null;
+	String depositMoney = null;
+	String depositDay = null;
+	String deliverName = null;
+	String phoneNumber = null;
+	String location = null;
+	String zipCode = null;
 
-	String reportContent = null;
-
-	if(request.getParameter("reportTitle") != null) {
-
-		reportTitle = (String) request.getParameter("reportTitle");
-
+	if(request.getParameter("depositName") != null) {
+		depositName = (String) request.getParameter("depositName");
+	}
+	if(request.getParameter("depositMoney") != null) {
+		depositMoney = (String) request.getParameter("depositMoney");
+	}
+	if(request.getParameter("depositDay") != null) {
+		depositDay = (String) request.getParameter("depositDay");
+	}
+	if(request.getParameter("deliverName") != null) {
+		deliverName = (String) request.getParameter("deliverName");
+	}
+	if(request.getParameter("phoneNumber") != null) {
+		phoneNumber = (String) request.getParameter("phoneNumber");
+	}
+	if(request.getParameter("location") != null) {
+		location = (String) request.getParameter("location");
+	}
+	if(request.getParameter("zipCode") != null) {
+		zipCode = (String) request.getParameter("zipCode");
 	}
 
-	if(request.getParameter("reportContent") != null) {
-
-		reportContent = (String) request.getParameter("reportContent");
-
-	}
-
-	if (reportTitle == null || reportContent == null) {
+	if (depositName == null || depositMoney == null || depositDay == null || deliverName == null 
+			|| phoneNumber == null || location == null || zipCode == null) {
 
 		PrintWriter script = response.getWriter();
 
@@ -98,9 +113,15 @@
 
 	String to = "myso0615m@gmail.com";
 
-	String subject = "[띠] 접수된 신고 메일입니다.";
+	String subject = "[띠] 매거진 구독 구매서입니다.";
 
-	String content = "신고자: " + userID + "<br>제목: " + reportTitle + "<br>내용: " + reportContent;
+	String content = "구독자 아이디: " + userID + "<br>입금자 이름: " + depositName
+			+ "<br>입금액: " + depositMoney
+			+ "<br>입금일: " + depositDay
+			+ "<br>수령인: " + deliverName
+			+ "<br>전화번호: " + phoneNumber
+			+ "<br>주소: " + location
+			+ "<br>우편번호: " + zipCode;
 
 	
 
@@ -176,9 +197,8 @@
 
 	script.println("<script>");
 
-	script.println("alert('정상적으로 신고되었습니다.');");
-
-	script.println("history.back();");
+	script.println("alert('정상적으로 접수되었습니다.');");
+	script.println("location.href = 'buyResult.jsp';");
 
 	script.println("</script>");
 

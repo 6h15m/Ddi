@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
 <%@ page import="user.UserDAO"%>
 <%@ page import="java.io.PrintWriter"%>
 <!doctype html>
@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<!-- 커스텀 CSS 추가 -->
 	<link rel="stylesheet" href="./css/custom.css">
-	<link rel="stylesheet" href="./css/slider.css">
   <title>Calendar</title>
 </head>
 <body>
@@ -72,6 +71,11 @@
 		</div>
 
 	</nav>
+	<div style="background-color: #FAFAFA !important"
+		class="jumbotron jumbotron-fluid">
+		<jsp:include page="calendarInside.jsp" flush="false"/>
+		</div>
+		
 	
 	<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
 
@@ -87,6 +91,6 @@
 	<!-- 부트스트랩 자바스크립트 추가하기 -->
 
 	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/slider.js"></script>
+
 </body>
 </html>
