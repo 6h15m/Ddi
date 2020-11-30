@@ -4,7 +4,7 @@
 
 **MAIN**
 -----------
-<img src = "https://user-images.githubusercontent.com/52748335/100621391-f67b0100-3362-11eb-9556-c821be809da8.png)">
+<img src = "https://user-images.githubusercontent.com/52748335/100621712-58d40180-3363-11eb-8a60-3b1257455958.png)">
 
 
 JSP, Bootstrap 등을 이용하여 만든 비혼 여성을 위한 커뮤니티입니다.
